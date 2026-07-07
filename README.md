@@ -1,0 +1,1 @@
+Static website for The Assembly Soup Kitchen.

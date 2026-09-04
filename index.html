@@ -1,372 +1,803 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <title> The Assembly Soup Kitchen </title>
-  <link rel='shortcut icon' type='image/jpg' href='task.png'>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel='stylesheet' href='assembly.css'>
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Montserrat&family=Niconne&family=Prata&display=swap');
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VQK413NN5M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>The Assembly Soup Kitchen | Serving Communities in Need</title>
 
-  gtag('config', 'G-VQK413NN5M');
-</script>
+    <link rel="shortcut icon" type="image/jpg" href="task.png">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assembly.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQK413NN5M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-VQK413NN5M');
+    </script>
 </head>
+
 <body>
-<div class="topnav sticky" >
 
-  <a class="active" href='https://www.facebook.com/theassemblysoupkitchen'>The Assembly Soup Kitchen</a>
-  <div class="topnav-right" id='myTopnav'>
-  <a href="#home" class='hvr-underline-from-left'>Home</a>
-  <a href="#about" class='hvr-underline-from-left'>About</a>
-  <a href="#volunteer" class='hvr-underline-from-left'>Volunteer</a>
-  <a href="#donate" class='hvr-underline-from-left'>Donate</a>
-  <a href="#gallery" class='hvr-underline-from-left'>Gallery</a>
-  <a href='https://www.instagram.com/assemblysoupkitchen/' class='hvr-underline-from-left'> <img src='insta.png' class='icon'></a>
-  <a href='https://www.facebook.com/theassemblysoupkitchen' class='hvr-underline-from-left'> <img src='facebook.png' class='icon'></a>
-  <div class='dropdown'>
-  <a class="hamburger dropbtn" style='color:white;'>
-    ☰
-  </a>
-  <div class="dropdown-content">
-    <a href="#home" class='hvr-underline-from-left'>Home</a>
-    <a href="#about" class='hvr-underline-from-left'>About</a>
-    <a href="#volunteer" class='hvr-underline-from-left'>Volunteer</a>
-    <a href="#donate" class='hvr-underline-from-left'>Donate</a>
-    <a href="#gallery" class='hvr-underline-from-left'>Gallery</a>
-    <a href='https://www.instagram.com/assemblysoupkitchen/' class='hvr-underline-from-left'> <img src='insta.png' class='icon'></a>
-    <a href='https://www.facebook.com/theassemblysoupkitchen' class='hvr-underline-from-left'> <img src='facebook.png' class='icon'></a>
-	</div>
-</div>
-</div>
-</div>
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
 
+<header class="navbar">
 
-<div class='spacer' id='home'></div>
+    <div class="nav-container">
 
-  <div class='header'>
-    <div class='headerBackground'>
-    <div class='parentHeader'>
-      <div class='childHeader' style="font-weight:bold; font-family: 'Prata', serif;"> Welcome To <u class='headerline' >The Assembly Soup Kitchen</u> </div>
-      <br>
-      <div class='childHeader' style="font-size:20px;font-family: 'Prata', serif;"> "If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday." <br>- Isaiah 58:10</div>
-  </div>
-</div>
-</div>
-  <div class='aboutCard' id='about'>
-    <div class='insetPic' style="background-image:url('about.JPG')">
-      <div class='aboutTask' style='position:absolute;width:100%;text-align:center;top:80px;'>
-        <p style='font-size:90px'> <u class='headerline' >About Us</u></p>
-      </div>
+        <a href="#home" class="logo">
+            <span class="logo-main">THE ASSEMBLY</span>
+            <span class="logo-sub">SOUP KITCHEN</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#programmes">Programmes</a>
+            <a href="#impact">Impact</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#donate" class="nav-donate">Donate</a>
+
+            <a href="https://www.instagram.com/assemblysoupkitchen/"
+               target="_blank"
+               class="social-link">
+                <img src="insta.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.facebook.com/theassemblysoupkitchen"
+               target="_blank"
+               class="social-link">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+        <button class="mobile-menu" onclick="toggleMenu()" aria-label="Open menu">
+            ☰
+        </button>
+
     </div>
-  </div>
 
-  <div class='aboutCard' style="height:100%; padding-bottom:100px; color:#333333;">
-    <div class='textBox'>
-        The Assembly Soup Kitchen ( T.A.S.K ) started with a handful of volunteers cooking food from their own kitchens - doing what they could with what they had. We are an <u class='smallUnder'>independent, all-volunteer organisation that serves the homeless and hungry</u> predominantly in the Klang Valley. We have been relying on volunteers, local businesses, and the generosity of the community to help us continue our mission of providing hot, nutritious meals to those in need.
-        <br>
-        <br>
-        Our vision is to provide food security to Orang Asli,
-        refugee, B40 and other underserved communities
-        throughout the Klang Valley.
-      <br>
- <br> 
-		<br>
-<!-- Stats -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#programmes" onclick="closeMenu()">Programmes</a>
+        <a href="#impact" onclick="closeMenu()">Impact</a>
+        <a href="#volunteer" onclick="closeMenu()">Volunteer</a>
+        <a href="#donate" onclick="closeMenu()">Donate</a>
+        <a href="#gallery" onclick="closeMenu()">Gallery</a>
+    </div>
 
-<section class="py-24 bg-white">
+</header>
 
-<div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 text-center">
 
-<div>
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-<h2 class="text-6xl font-bold text-yellow-700">
-500K+
-</h2>
+<section class="hero" id="home">
 
-<p class="mt-3 text-gray-600">
-Meals Served
-</p>
+    <div class="hero-overlay"></div>
 
-</div>
+    <div class="hero-content">
 
-<div>
+        <div class="hero-label">
+            COMMUNITY • DIGNITY • HOPE
+        </div>
 
-<h2 class="text-6xl font-bold text-yellow-700">
-RM6M+
-</h2>
+        <h1>
+            Serving food.<br>
+            <span>Building community.</span>
+        </h1>
 
-<p class="mt-3 text-gray-600">
-Food Distributed
-</p>
+        <p>
+            The Assembly Soup Kitchen provides hot, nutritious meals
+            and practical support to communities and individuals in need
+            throughout the Klang Valley.
+        </p>
 
-</div>
+        <div class="hero-buttons">
+            <a href="#donate" class="btn btn-primary">
+                Donate
+            </a>
 
-<div>
+            <a href="#volunteer" class="btn btn-outline">
+                Volunteer
+            </a>
+        </div>
 
-<h2 class="text-6xl font-bold text-yellow-700">
-3000+
-</h2>
+    </div>
 
-<p class="mt-3 text-gray-600">
-Volunteers
-</p>
-
-</div>
-
-<div>
-
-<h2 class="text-6xl font-bold text-yellow-700">
-300+
-</h2>
-
-<p class="mt-3 text-gray-600">
-Children Supported
-</p>
-
-</div>
-
-</div>
+    <div class="hero-verse">
+        "If you pour yourself out for the hungry..."
+        <span>Isaiah 58:10</span>
+    </div>
 
 </section>
-      <br>
-  <br>
-<Br>
-<sup></sup>
-        <!-- As of today, by God’s grace we have had the opportunity to partner with over <u class='smallUnder' >200 volunteers</u>, numerous food organisations and are able to provide <u class='smallUnder'>over 3000 meals</u> a week for the communities in need. -->
-    </div>
-
-  </div>
-  <div class='spacer' style='background-color:#333333'></div>
-  <div class='helpCard' style='height:200px;'>
-    <p style='font-size:90px; font-weight:bold;'>Ongoing activities</p>
-  </div>
-
-  <div class='spacer' style='background-color:#333333'></div>
 
 
-<!-- CHANGES BEGIN -->
+<!-- =========================================================
+     IMPACT
+========================================================= -->
 
+<section class="impact" id="impact">
 
-  <div class='aboutCard'>
-    <div class='insetPic' style="background-image:url('taskEats.jpg')">
-      <div class='aboutTask' >
-        <p style='font-size:90px;'> <u class='headerline' >TASK E.A.T.S </u></p>
-      </div>
-    </div>
-  </div>
-  <div class='aboutCard' style='height:150%;  color:#333333'>
-    <div class='textBox'>
-        The TASK Employment and Training Scheme is designed to empower refugee moms to
-        be independent and confident.
-        <br>
-        <br>
-        Our training includes both technical and soft skills such as baking, cooking, financial literacy, and managerial and leadership skils. We deliver this through our volunteer trainers who are specialists in their respective industries.
-        <br>
-        <br>
-        We work to create networking opportunities to assist in the sale of their products.
+    <div class="section-container">
 
-    </div>
-    <br>
-    <br>
-</div>
+        <div class="section-intro centered">
+            <span class="eyebrow">OUR IMPACT</span>
 
-<div class='aboutCard'>
-  <!-- <div class='insetPic' style="background-image:url('taskAngels.jpg')"> -->
-  <div class='insetPic' style="background-image:url('taskAngels2.jpg')">
-    <div class='aboutTask' >
-      <p style='font-size:90px;'> <u class='headerline' >TASK Angels </u></p>
-    </div>
-  </div>
-</div>
-<div class='aboutCard' style='height:100%;  color:#333333'>
-  <div class='textBox'>
-    TASK Angels was established to
-empower and create a safe-space for
-teens and young adults with special
-needs and high-functioning autism
-(HFA).
-<br>
-<br>
-Training includes both technical and soft skills such as simple baking, music and educational trips.
-<br>
-<br>
-Trainers for TASK Angels are both volunteers and paid
-for their assistance.
-  </div>
-  <br>
-  <br>
-</div>
+            <h2>
+                Together, we make<br>
+                a difference.
+            </h2>
 
+            <p>
+                What started with a handful of volunteers cooking from
+                their own kitchens has grown into a community supported
+                by thousands of volunteers and partners.
+            </p>
+        </div>
 
-<div class='aboutCard'>
-  <div class='insetPic' style="background-image:url('learnCenter.jpg')">
-    <div class='aboutTask' >
-      <p style='font-size:90px;'> <u class='headerline' >The Assembly Learning Center</u></p>
-    </div>
-  </div>
-</div>
-<div class='aboutCard' style='height:100%;  color:#333333'>
-  <div class='textBox'>
-    TALC was established to meet the need for
-education for the refugee community due to their lack of access to public education.
-<br>
-<br>
-Students are provided books, uniforms, meals,
-transportation and education needs.
-<br>
-<br>
-They are taught life skills, social skills,
-community skills and other soft skills as well.
-<br>
-<br>
-In from 2022 - 2025, we met the educational needs of over 300 children ranging from grades 1 to 9. 
-  </div>
-  <br>
-  <br>
-  <Br>
-</div>
+        <div class="stats-grid">
 
+            <div class="stat-card">
+                <div class="stat-number">500K+</div>
+                <div class="stat-label">Meals Served</div>
+            </div>
 
-<!-- CHANGES END -->
+            <div class="stat-card">
+                <div class="stat-number">RM6M+</div>
+                <div class="stat-label">Food Distributed</div>
+            </div>
 
+            <div class="stat-card">
+                <div class="stat-number">3,000+</div>
+                <div class="stat-label">Volunteers</div>
+            </div>
 
-<div class='spacer' style='background-color:#333333'></div>
-  <div class='helpCard' style='height:200px;'>
-    <p style='font-size:90px; font-weight:bold;'> How You Can Help</p>
-  </div>
-<div class='spacer'  style='background-color:#333333;'></div>
+            <div class="stat-card">
+                <div class="stat-number">300+</div>
+                <div class="stat-label">Children Supported</div>
+            </div>
 
-  <div class='aboutCard' id='volunteer'>
-    <div class='insetPic'>
-      <div class='aboutTask' >
-        <p style='font-size:90px;'> <u class='headerline' >Volunteer </u></p>
-      </div>
-    </div>
-  </div>
-  <div class='aboutCard' style='height:100%;  color:#333333'>
-    <div class='textBox'>
-
-      Volunteering with us is simple ! You don’t have to commit to a regular schedule and you can do so in several ways. Contact us on Facebook or Instagram to get involved! ( Groups are required to pre-book a day ) 
-      <br>
-      Volunteers usually assist us with preparation, packing, cooking and delivery of meals. We are also looking for occasional volunteers to help with our inventory and storage. To have a better idea how, simply browse our Social Media pages to see how other groups in the past has done it.
-     
-    
-    Visit our <a href='https://www.facebook.com/theassemblysoupkitchen'><u>Facebook</u></a> and <u><a href='https://www.instagram.com/assemblysoupkitchen/'>Instagram</a></u> pages to see our volunteers in action!
+        </div>
 
     </div>
-    <Br>
 
-</div>
+</section>
 
-  <div class='aboutCard' id='donate'>
-    <div class='insetPic' style="background-image:url('donate.jpg')">
-      <div class='aboutTask' >
-        <p style='font-size:90px;'> <u class='headerline' >Donate </u></p>
-      </div>
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about section" id="about">
+
+    <div class="section-container">
+
+        <div class="two-column">
+
+            <div class="image-box about-image">
+                <div class="image-label">
+                    THE ASSEMBLY SOUP KITCHEN
+                </div>
+            </div>
+
+            <div class="section-content">
+
+                <span class="eyebrow">ABOUT US</span>
+
+                <h2>
+                    Doing what we can,<br>
+                    with what we have.
+                </h2>
+
+                <p>
+                    The Assembly Soup Kitchen (T.A.S.K) started with a
+                    handful of volunteers cooking food from their own
+                    kitchens — doing what they could with what they had.
+                </p>
+
+                <p>
+                    We are an independent, all-volunteer organisation
+                    that serves the homeless and hungry predominantly
+                    throughout the Klang Valley.
+                </p>
+
+                <p>
+                    We rely on volunteers, local businesses and the
+                    generosity of the community to continue our mission
+                    of providing hot, nutritious meals to those in need.
+                </p>
+
+                <div class="highlight-box">
+                    <strong>Our vision</strong>
+
+                    <p>
+                        To provide food security to Orang Asli, refugee,
+                        B40 and other underserved communities throughout
+                        the Klang Valley.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </div>
-  <div class='aboutCard' style='height:100%; padding-bottom:100px; color:#333333'>
-    <div class='textBox'>
-The Assembly Soup Kitchen exists on the generosity of organisations and individuals. Your contribution, no matter the amount, is invaluable to our continuation in providing food supplies and assistance to our beneficiaries.
-      <br>
-      <br>
-      <div class='helpCard' style='height:200px; font-size:50px;width:100%;margin-bottom:20px;'>
-        <p style='font-size:70px; font-weight:bold;'> Monetary</p>
 
-      </div>
-      Cash donations can be made to:
-      <br>
-      <b> Assembly Ground Sdn Bhd </b>
-      <br>
-      through
-      <br>
-      <b> RHB 262111-00010155 </b>
+</section>
 
-      <br>
-      <br>
-      The Assembly Soup Kitchen (TASK) is not a social enterprise/ non-governmental organisation. Donations made to TASK are not tax deductible. However, we will gladly issue a donation receipt upon request.
-      <br>
-      <Br>
-      <div class='helpCard' style='height:200px; font-size:50px;width:100%;margin-bottom:20px;'>
-        <p style='font-size:70px; font-weight:bold;'> Non-monetary</p>
 
-      </div>
-      We very much welcome non-monetary contribution in the form of <b>dry goods</b>, <b>frozen food</b> and <b>fresh food</b>. However, our needs would very much depend on the requests of our beneficiaries and it may differ week-to-week. Please contact us through Facebook or Instagram to check with us on our needs prior to making your contribution.
+<!-- =========================================================
+     PROGRAMMES
+========================================================= -->
+
+<section class="programmes section" id="programmes">
+
+    <div class="section-container">
+
+        <div class="section-intro centered">
+
+            <span class="eyebrow">WHAT WE DO</span>
+
+            <h2>
+                More than a meal.
+            </h2>
+
+            <p>
+                Our work extends beyond food. Through our programmes,
+                we seek to create opportunities, provide education and
+                empower communities.
+            </p>
+
+        </div>
+
+
+        <div class="programme-grid">
+
+            <!-- TASK EATS -->
+
+            <article class="programme-card">
+
+                <div class="programme-image eats-image"></div>
+
+                <div class="programme-content">
+
+                    <span class="programme-number">01</span>
+
+                    <h3>TASK E.A.T.S</h3>
+
+                    <h4>
+                        Employment & Training Scheme
+                    </h4>
+
+                    <p>
+                        Empowering refugee mothers to become more
+                        independent and confident through practical
+                        training and opportunities.
+                    </p>
+
+                    <p>
+                        Training includes baking, cooking, financial
+                        literacy, management and leadership skills.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- TASK ANGELS -->
+
+            <article class="programme-card">
+
+                <div class="programme-image angels-image"></div>
+
+                <div class="programme-content">
+
+                    <span class="programme-number">02</span>
+
+                    <h3>TASK Angels</h3>
+
+                    <h4>
+                        Empowering young people
+                    </h4>
+
+                    <p>
+                        TASK Angels creates a safe and supportive
+                        environment for teens and young adults with
+                        special needs and high-functioning autism.
+                    </p>
+
+                    <p>
+                        Activities include simple baking, music,
+                        educational trips and life skills.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- LEARNING CENTER -->
+
+            <article class="programme-card">
+
+                <div class="programme-image learning-image"></div>
+
+                <div class="programme-content">
+
+                    <span class="programme-number">03</span>
+
+                    <h3>Assembly Learning Center</h3>
+
+                    <h4>
+                        Education & opportunity
+                    </h4>
+
+                    <p>
+                        The Assembly Learning Center was established
+                        to meet the educational needs of children in
+                        the refugee community.
+                    </p>
+
+                    <p>
+                        From 2022–2025, we supported the educational
+                        needs of more than 300 children from Grades 1–9.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
     </div>
 
-  </div>
-<div class='helpCard map'>
-  <p style='font-weight:bold;'> <div style="width: 100%;"><iframe width="100%" height="700" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=the%20assembly%20soup%20kitchen+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/"></a></div></p>
-</div>
-<div class='contactCard'>
-  <div class='textBox'>
-  <span style='font-size:70px; font-weight:bold;'> Follow us! </span>
-  <br>
-  <br>
-  Get in touch by dropping us a message on Facebook or email  us at info@theassemblysoupkitchen
-  <Br>
-    <br>
-  <a href='https://www.instagram.com/assemblysoupkitchen/' class='hvr-underline-from-left'> <img src='insta.png' class='bigIcon'></a>
-  <a href='https://www.facebook.com/theassemblysoupkitchen' class='hvr-underline-from-left'> <img src='facebook.png' class='bigIcon'></a>
-</div>
-  </div>
-  <div class='spacer' id='gallery'></div>
-<div class='helpCard' style='height:200px; background-color:white;color:#333333;'  >
-  <p style='font-size:90px; font-weight:bold;'> Gallery</p>
-</div>
-
-<!-- <div class='contactCard' style='height:auto' >
-
-  <div class="galContainer">
-           <div class="gallery">
-               <figure class="gallery__item gallery__item--1">
-                   <img src="gal1.JPG" alt="Gallery image 1" class="gallery__img">
-               </figure>
-               <figure class="gallery__item gallery__item--2">
-                   <img src="gal2.jpg" alt="Gallery image 2" class="gallery__img">
-               </figure>
-               <figure class="gallery__item gallery__item--3">
-                   <img src="gal3.jpg" alt="Gallery image 3" class="gallery__img">
-               </figure>
-               <figure class="gallery__item gallery__item--4">
-                   <img src="gal4.jpg" alt="Gallery image 4" class="gallery__img">
-               </figure>
-               <figure class="gallery__item gallery__item--5">
-                   <img src="gal5.jpg" alt="Gallery image 5" class="gallery__img">
-               </figure>
-               <figure class="gallery__item gallery__item--6">
-                   <img src="gal6.jpg" alt="Gallery image 6" class="gallery__img">
-               </figure>
-           </div>
-       </div>
-</div> -->
-<div class='contactCard'>
-<div style='width:100%; background-color:white; padding-top:20px' class="embedsocial-hashtag" data-ref="3ed107f1956ef818e32aeab8abe8b2429c4ba274" ><a class="feed-powered-by-es" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Powered by EmbedSocial">Powered by EmbedSocial<span>→</span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
-</div>
+</section>
 
 
+<!-- =========================================================
+     VOLUNTEER CTA
+========================================================= -->
+
+<section class="cta volunteer-section" id="volunteer">
+
+    <div class="cta-overlay"></div>
+
+    <div class="cta-content">
+
+        <span class="eyebrow light">GET INVOLVED</span>
+
+        <h2>
+            Your time can<br>
+            make a difference.
+        </h2>
+
+        <p>
+            You don't need to commit to a regular schedule.
+            Volunteers help with preparation, cooking, packing,
+            delivery, inventory and storage.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="https://www.facebook.com/theassemblysoupkitchen"
+               target="_blank"
+               class="btn btn-primary">
+                Volunteer With Us
+            </a>
+
+            <a href="https://www.instagram.com/assemblysoupkitchen/"
+               target="_blank"
+               class="btn btn-outline light-button">
+                See Us In Action
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 
-<div class='contactCard' style='height:200px;'>
-  All Rights Reserved, 2026 by The Assembly Soup Kitchen
-</div>
-</div>
+<!-- =========================================================
+     DONATE
+========================================================= -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<section class="donate section" id="donate">
+
+    <div class="section-container">
+
+        <div class="section-intro centered">
+
+            <span class="eyebrow">SUPPORT OUR WORK</span>
+
+            <h2>
+                Every contribution matters.
+            </h2>
+
+            <p>
+                The Assembly Soup Kitchen exists through the generosity
+                of organisations and individuals.
+            </p>
+
+        </div>
+
+
+        <div class="donation-grid">
+
+            <!-- MONEY -->
+
+            <div class="donation-card featured">
+
+                <div class="donation-icon">
+                    RM
+                </div>
+
+                <span class="donation-label">
+                    MONETARY
+                </span>
+
+                <h3>
+                    Give financially
+                </h3>
+
+                <p>
+                    Your contribution helps us continue providing
+                    food supplies and assistance to our beneficiaries.
+                </p>
+
+                <div class="bank-details">
+
+                    <span>Account Name</span>
+                    <strong>Assembly Ground Sdn Bhd</strong>
+
+                    <span>Bank</span>
+                    <strong>RHB</strong>
+
+                    <span>Account Number</span>
+                    <strong class="account-number">
+                        262111-00010155
+                    </strong>
+
+                </div>
+
+                <button
+                    class="copy-button"
+                    onclick="copyAccount()">
+                    Copy Account Number
+                </button>
+
+            </div>
+
+
+            <!-- FOOD -->
+
+            <div class="donation-card">
+
+                <div class="donation-icon">
+                    +
+                </div>
+
+                <span class="donation-label">
+                    NON-MONETARY
+                </span>
+
+                <h3>
+                    Donate food
+                </h3>
+
+                <p>
+                    We welcome contributions of:
+                </p>
+
+                <ul class="food-list">
+                    <li>Dry goods</li>
+                    <li>Fresh food</li>
+                    <li>Frozen food</li>
+                </ul>
+
+                <p class="small-note">
+                    Our needs change from week to week depending on
+                    requests from our beneficiaries. Please contact
+                    us before making a contribution so we can advise
+                    you on our current needs.
+                </p>
+
+                <a href="https://www.facebook.com/theassemblysoupkitchen"
+                   target="_blank"
+                   class="text-button">
+                    Contact us →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="donation-note">
+
+            <strong>Important:</strong>
+
+            The Assembly Soup Kitchen (TASK) is not a social
+            enterprise or non-governmental organisation.
+            Donations made to TASK are not tax deductible.
+            However, we will gladly issue a donation receipt
+            upon request.
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LOCATION
+========================================================= -->
+
+<section class="location">
+
+    <div class="location-content">
+
+        <span class="eyebrow">FIND US</span>
+
+        <h2>
+            Come and be part<br>
+            of the community.
+        </h2>
+
+        <p>
+            The Assembly Soup Kitchen<br>
+            Klang Valley, Malaysia
+        </p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=The+Assembly+Soup+Kitchen"
+           target="_blank"
+           class="btn btn-dark">
+            Get Directions
+        </a>
+
+    </div>
+
+    <div class="map-container">
+
+        <iframe
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=the%20assembly%20soup%20kitchen+(The%20Assembly%20Soup%20Kitchen)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="100%"
+            height="500"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GALLERY / SOCIAL
+========================================================= -->
+
+<section class="gallery-section section" id="gallery">
+
+    <div class="section-container">
+
+        <div class="section-intro centered">
+
+            <span class="eyebrow">FOLLOW OUR JOURNEY</span>
+
+            <h2>
+                See TASK in action.
+            </h2>
+
+            <p>
+                Follow our volunteers, programmes and community
+                activities on social media.
+            </p>
+
+        </div>
+
+
+        <div class="social-buttons">
+
+            <a href="https://www.facebook.com/theassemblysoupkitchen"
+               target="_blank"
+               class="social-button">
+
+                <img src="facebook.png" alt="Facebook">
+
+                Facebook
+
+            </a>
+
+            <a href="https://www.instagram.com/assemblysoupkitchen/"
+               target="_blank"
+               class="social-button">
+
+                <img src="insta.png" alt="Instagram">
+
+                Instagram
+
+            </a>
+
+        </div>
+
+
+        <!-- EmbedSocial -->
+
+        <div class="instagram-feed">
+
+            <div
+                class="embedsocial-hashtag"
+                data-ref="3ed107f1956ef818e32aeab8abe8b2429c4ba274">
+
+                <a
+                    class="feed-powered-by-es"
+                    href="https://embedsocial.com/social-media-aggregator/"
+                    target="_blank">
+
+                    Powered by EmbedSocial →
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <span class="logo-main">
+                THE ASSEMBLY
+            </span>
+
+            <span class="logo-sub">
+                SOUP KITCHEN
+            </span>
+
+            <p>
+                Serving food. Building community.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#about">About</a>
+            <a href="#programmes">Programmes</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#donate">Donate</a>
+            <a href="#gallery">Gallery</a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <a href="https://www.instagram.com/assemblysoupkitchen/"
+               target="_blank">
+
+                <img src="insta.png" alt="Instagram">
+
+            </a>
+
+            <a href="https://www.facebook.com/theassemblysoupkitchen"
+               target="_blank">
+
+                <img src="facebook.png" alt="Facebook">
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 The Assembly Soup Kitchen.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+function toggleMenu() {
+
+    const menu = document.getElementById("mobileNav");
+
+    menu.classList.toggle("open");
+
+}
+
+
+function closeMenu() {
+
+    const menu = document.getElementById("mobileNav");
+
+    menu.classList.remove("open");
+
+}
+
+
+function copyAccount() {
+
+    const account = "262111-00010155";
+
+    navigator.clipboard.writeText(account);
+
+    const button = document.querySelector(".copy-button");
+
+    button.innerText = "Account Number Copied ✓";
+
+    setTimeout(function() {
+
+        button.innerText = "Copy Account Number";
+
+    }, 2500);
+
+}
+
+</script>
+
+
+<!-- EmbedSocial -->
+
+<script>
+(function(d, s, id) {
+
+    var js;
+
+    if (d.getElementById(id)) {
+        return;
+    }
+
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://embedsocial.com/cdn/ht.js";
+
+    d.getElementsByTagName(s)[0].appendChild(js);
+
+}(document, "script", "EmbedSocialHashtagScript"));
+</script>
 
 </body>
 </html>
-<!-- written by Daniel Tok -->
-<!-- text and images courtesy of the TASK Social Media team
